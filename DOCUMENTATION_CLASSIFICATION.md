@@ -1,0 +1,306 @@
+# Chromium 字体渲染文档分类整理
+
+**总文档数**: 84 个  
+**分类数**: 12 大类  
+**最后更新**: 2024
+
+---
+
+## 📑 分类索引
+
+### 1️⃣ **Android Chromium 字体系统** (17 个文档)
+Android 特定的字体加载、选择和渲染流程
+
+| 文档 | 说明 |
+|------|------|
+| [START_HERE_ANDROID_CHROMIUM_FONTS.md](START_HERE_ANDROID_CHROMIUM_FONTS.md) | 📍 **起点**：Android Chromium 字体快速入门 |
+| [ANDROID_CHROMIUM_COMPLETE_DOCUMENTATION_MAP.md](ANDROID_CHROMIUM_COMPLETE_DOCUMENTATION_MAP.md) | 完整的 Android 文档地图 |
+| [ANDROID_CHROMIUM_CUSTOM_FONT_GUIDE.md](ANDROID_CHROMIUM_CUSTOM_FONT_GUIDE.md) | Android 自定义字体指南 |
+| [ANDROID_CHROMIUM_IMPLEMENTATION_CHECKLIST.md](ANDROID_CHROMIUM_IMPLEMENTATION_CHECKLIST.md) | 实现检查清单 |
+| [ANDROID_CHROMIUM_IMPLEMENTATION_DOCUMENTATION_INDEX.md](ANDROID_CHROMIUM_IMPLEMENTATION_DOCUMENTATION_INDEX.md) | 实现文档索引 |
+| [ANDROID_CHROMIUM_QUICK_REFERENCE.md](ANDROID_CHROMIUM_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+| [ANDROID_CHROMIUM_SIMPLE_FONT_GUIDE.md](ANDROID_CHROMIUM_SIMPLE_FONT_GUIDE.md) | 简化字体指南 |
+| [ANDROID_CHROMIUM_VS_WEBVIEW_VS_DESKTOP_COMPARISON.md](ANDROID_CHROMIUM_VS_WEBVIEW_VS_DESKTOP_COMPARISON.md) | 对比分析：Android Chromium vs WebView vs Desktop |
+| [ANDROID_CHROMIUM_FONT_FEATURE_ANALYSIS_SUMMARY.md](ANDROID_CHROMIUM_FONT_FEATURE_ANALYSIS_SUMMARY.md) | 字体功能分析总结 |
+| [ANDROID_CUSTOM_FONT_IMPLEMENTATION_GUIDE.md](ANDROID_CUSTOM_FONT_IMPLEMENTATION_GUIDE.md) | 自定义字体实现指南 |
+| [ANDROID_FONT_LOADING_ANALYSIS.md](ANDROID_FONT_LOADING_ANALYSIS.md) | 字体加载分析 |
+| [ANDROID_FONT_LOADING_CALL_STACK.md](ANDROID_FONT_LOADING_CALL_STACK.md) | 字体加载调用栈 |
+| [ANDROID_FONT_LOADING_README.md](ANDROID_FONT_LOADING_README.md) | 字体加载 README |
+| [ANDROID_FONT_NAVIGATION.md](ANDROID_FONT_NAVIGATION.md) | 字体导航 |
+| [ANDROID_FONT_RENDERING_INTEGRATION.md](ANDROID_FONT_RENDERING_INTEGRATION.md) | 字体渲染集成 |
+| [ANDROID_FONT_SELECTION_COMPLETE_FLOW.md](ANDROID_FONT_SELECTION_COMPLETE_FLOW.md) | 字体选择完整流程 |
+| [Android_Font_Rendering_Code_Paths.md](Android_Font_Rendering_Code_Paths.md) | 字体渲染代码路径 |
+| [ANDROID_FONT_SKFONTMGR_CORE.md](ANDROID_FONT_SKFONTMGR_CORE.md) | Skia FontManager 核心 |
+
+---
+
+### 2️⃣ **Chrome 浏览器字体** (8 个文档)
+Chrome 特定的字体应用和交付
+
+| 文档 | 说明 |
+|------|------|
+| [CHROME_CUSTOM_FONT_README.md](CHROME_CUSTOM_FONT_README.md) | Chrome 自定义字体 README |
+| [CHROME_CUSTOM_FONT_ANALYSIS_SUMMARY.md](CHROME_CUSTOM_FONT_ANALYSIS_SUMMARY.md) | 分析总结 |
+| [CHROME_CUSTOM_FONT_CODE_FLOW.md](CHROME_CUSTOM_FONT_CODE_FLOW.md) | 代码流程 |
+| [CHROME_CUSTOM_FONT_DELIVERY_SUMMARY.md](CHROME_CUSTOM_FONT_DELIVERY_SUMMARY.md) | 字体交付总结 |
+| [CHROME_CUSTOM_FONT_DOCUMENTATION_INDEX.md](CHROME_CUSTOM_FONT_DOCUMENTATION_INDEX.md) | 文档索引 |
+| [CHROME_CUSTOM_FONT_FEATURE_ANALYSIS.md](CHROME_CUSTOM_FONT_FEATURE_ANALYSIS.md) | 功能分析 |
+| [CHROME_CUSTOM_FONT_QUICK_REFERENCE.md](CHROME_CUSTOM_FONT_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+
+---
+
+### 3️⃣ **Chromium 整体架构** (14 个文档)
+Chromium 浏览器核心的字体渲染和选择系统
+
+| 文档 | 说明 |
+|------|------|
+| [CHROMIUM_CSS_TO_RENDERING_COMPREHENSIVE_GUIDE.md](CHROMIUM_CSS_TO_RENDERING_COMPREHENSIVE_GUIDE.md) | 📚 **重要**：CSS 到渲染完整指南 |
+| [CHROMIUM_FONT_SELECTION_FLOW.md](CHROMIUM_FONT_SELECTION_FLOW.md) | 字体选择流程 |
+| [CHROMIUM_FONT_SELECTION_QUICK_REFERENCE.md](CHROMIUM_FONT_SELECTION_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+| [CHROMIUM_FONT_TERMINOLOGY_GUIDE.md](CHROMIUM_FONT_TERMINOLOGY_GUIDE.md) | 术语指南 |
+| [CHROMIUM_HINTING_详解.md](CHROMIUM_HINTING_详解.md) | Hinting 详解（中文） |
+| [CHROMIUM_MULTITHREADING_TASK_QUEUE.md](CHROMIUM_MULTITHREADING_TASK_QUEUE.md) | 多线程任务队列 |
+| [SYSTEM_FONTS_TO_FONTCACHE_FLOW.md](SYSTEM_FONTS_TO_FONTCACHE_FLOW.md) | 系统字体到 FontCache 流程 |
+| [SYSTEM_FONT_DETECTION_ANALYSIS.md](SYSTEM_FONT_DETECTION_ANALYSIS.md) | 系统字体检测分析 |
+| [SYSTEM_FONT_IMPLEMENTATION_PLAN.md](SYSTEM_FONT_IMPLEMENTATION_PLAN.md) | 系统字体实现计划 |
+| [HTML_PARSING_TO_LAYOUT_TREE.md](HTML_PARSING_TO_LAYOUT_TREE.md) | HTML 解析到布局树 |
+| [COMPLETE_FONT_PROCESSING_FLOW.md](COMPLETE_FONT_PROCESSING_FLOW.md) | 完整字体处理流程 |
+| [Blink_Font_Rendering_Architecture.md](Blink_Font_Rendering_Architecture.md) | Blink 字体渲染架构 |
+
+---
+
+### 4️⃣ **字符替补机制** (2 个文档)
+字符在指定字体中不存在时的处理机制
+
+| 文档 | 说明 |
+|------|------|
+| [CHARACTER_FALLBACK_MECHANISM.md](CHARACTER_FALLBACK_MECHANISM.md) | 📌 **核心**：字符替补机制详解 |
+| [CHARACTER_FALLBACK_CALL_STACK.md](CHARACTER_FALLBACK_CALL_STACK.md) | 📌 **核心**：完整调用栈映射 |
+
+---
+
+### 5️⃣ **CSS 字体选择** (4 个文档)
+CSS font-family、weight、style 等属性的处理
+
+| 文档 | 说明 |
+|------|------|
+| [CSS_FONT_SELECTION_WITH_STYLE.md](CSS_FONT_SELECTION_WITH_STYLE.md) | 带样式的 CSS 字体选择 |
+| [CSS_RENDERING_QUICK_REFERENCE.md](CSS_RENDERING_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+| [FONT_MATCHING_RFC_TO_CODE_EVIDENCE.md](FONT_MATCHING_RFC_TO_CODE_EVIDENCE.md) | RFC 规范到代码证据 |
+| [FONT_FAMILY_RESOLUTION_FLOW.md](FONT_FAMILY_RESOLUTION_FLOW.md) | 字体族名解析流程 |
+
+---
+
+### 6️⃣ **字体数据结构** (7 个文档)
+Font、FontData、FontDescription 等核心类的关系和继承
+
+| 文档 | 说明 |
+|------|------|
+| [FONT_DATA_STRUCTURES_COMPLETE_INHERITANCE.md](FONT_DATA_STRUCTURES_COMPLETE_INHERITANCE.md) | 📌 完整继承关系 |
+| [FONTDATA_CLASS_HIERARCHY.md](FONTDATA_CLASS_HIERARCHY.md) | FontData 类层次 |
+| [FONTCACHE_VS_FONTFACECACHE_ANALYSIS.md](FONTCACHE_VS_FONTFACECACHE_ANALYSIS.md) | FontCache vs FontFaceCache 对比 |
+| [FONTFACE_FONTDATA_RELATIONSHIP.md](FONTFACE_FONTDATA_RELATIONSHIP.md) | @font-face 和 FontData 关系 |
+| [FONT_IMPLEMENTATION_CODE_REFERENCE.md](FONT_IMPLEMENTATION_CODE_REFERENCE.md) | 代码参考 |
+| [FONT_FORMATS_BINARY_HINTING_EXAMPLES.md](FONT_FORMATS_BINARY_HINTING_EXAMPLES.md) | 字体格式和 Hinting 示例 |
+
+---
+
+### 7️⃣ **字体渲染管道** (10 个文档)
+从 CSS 到像素的完整渲染流程
+
+| 文档 | 说明 |
+|------|------|
+| [FONT_RENDERING_COMPREHENSIVE_ANALYSIS.md](FONT_RENDERING_COMPREHENSIVE_ANALYSIS.md) | 📚 综合分析 |
+| [FONT_RENDERING_DEEP_ANALYSIS.md](FONT_RENDERING_DEEP_ANALYSIS.md) | 深度分析 |
+| [FONT_RENDERING_DETAILED_CALLSTACK.md](FONT_RENDERING_DETAILED_CALLSTACK.md) | 详细调用栈 |
+| [FONT_RENDERING_QUICK_REFERENCE.md](FONT_RENDERING_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+| [FONT_RENDERING_SYSTEM_ANALYSIS.md](FONT_RENDERING_SYSTEM_ANALYSIS.md) | 系统分析 |
+| [DETAILED_FONT_CALLSTACK_WITH_SOURCE.md](DETAILED_FONT_CALLSTACK_WITH_SOURCE.md) | 带源代码的详细调用栈 |
+| [RENDERING_NG_PAINT_COMPOSITOR_GUIDE.md](RENDERING_NG_PAINT_COMPOSITOR_GUIDE.md) | RenderingNG Paint & Compositor 指南 |
+| [RENDERING_NG_PAINT_COMPOSITOR_CODE_EXAMPLES.md](RENDERING_NG_PAINT_COMPOSITOR_CODE_EXAMPLES.md) | 代码示例 |
+| [RENDERING_NG_QUICK_REFERENCE.md](RENDERING_NG_QUICK_REFERENCE.md) | ⚡ 快速参考 |
+| [RENDERINGNG_DEEP_DIVE.md](RENDERINGNG_DEEP_DIVE.md) | RenderingNG 深度讲解 |
+
+---
+
+### 8️⃣ **调用链和快速参考** (5 个文档)
+各种流程的快速查询和调用栈映射
+
+| 文档 | 说明 |
+|------|------|
+| [FONT_CALL_CHAIN_QUICK_REFERENCE.md](FONT_CALL_CHAIN_QUICK_REFERENCE.md) | ⚡ 调用链快速参考 |
+| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | ⚡ 通用快速参考 |
+| [FONT_RENDERING_RESOURCE_INDEX.md](FONT_RENDERING_RESOURCE_INDEX.md) | 资源索引 |
+| [RENDERING_NG_RESOURCE_INDEX.md](RENDERING_NG_RESOURCE_INDEX.md) | RenderingNG 资源索引 |
+
+---
+
+### 9️⃣ **Web 字体系统** (2 个文档)
+@font-face 规则和 Web 字体加载流程
+
+| 文档 | 说明 |
+|------|------|
+| [WEB_FONTS_DETAILED_ANALYSIS.md](WEB_FONTS_DETAILED_ANALYSIS.md) | 📚 详细分析 |
+| [WEB_FONT_DOWNLOAD_PROCESSING.md](WEB_FONT_DOWNLOAD_PROCESSING.md) | 下载和处理流程 |
+
+---
+
+### 🔟 **No-CSS 字体流程** (3 个文档)
+没有 CSS font-family 指定时的字体处理
+
+| 文档 | 说明 |
+|------|------|
+| [NO_CSS_FONT_FAMILY_FLOW.md](NO_CSS_FONT_FAMILY_FLOW.md) | 📌 完整流程分析 |
+| [NO_CSS_FONT_SELECTION_DETAIL.md](NO_CSS_FONT_SELECTION_DETAIL.md) | 详细说明 |
+| [NO_CSS_vs_WITH_CSS_COMPARISON.md](NO_CSS_vs_WITH_CSS_COMPARISON.md) | 对比分析 |
+
+---
+
+### 1️⃣1️⃣ **字体引擎** (3 个文档)
+FreeType、Skrifa 等字体引擎的集成
+
+| 文档 | 说明 |
+|------|------|
+| [FREETYPE_TO_SKRIFA_TRANSITION_ANALYSIS.md](FREETYPE_TO_SKRIFA_TRANSITION_ANALYSIS.md) | FreeType 到 Skrifa 转换分析 |
+| [SKRIFA_FORMATS_GLYF_VS_CFF.md](SKRIFA_FORMATS_GLYF_VS_CFF.md) | Skrifa 格式对比 |
+| [HARFBUZZ_HINTING_TIMING_ANALYSIS.md](HARFBUZZ_HINTING_TIMING_ANALYSIS.md) | HarfBuzz Hinting 时序分析 |
+
+---
+
+### 1️⃣2️⃣ **索引和总结** (9 个文档)
+各类文档的索引、更新总结和项目报告
+
+| 文档 | 说明 |
+|------|------|
+| [DOCUMENTATION_INDEX.md](DOCUMENTATION_INDEX.md) | 📑 文档总索引 |
+| [FONT_DOCUMENTATION_COMPLETE_INDEX.md](FONT_DOCUMENTATION_COMPLETE_INDEX.md) | 字体文档完整索引 |
+| [FONT_DOCUMENTATION_SUMMARY.md](FONT_DOCUMENTATION_SUMMARY.md) | 字体文档总结 |
+| [DOCUMENTATION_UPDATE_SUMMARY.md](DOCUMENTATION_UPDATE_SUMMARY.md) | 文档更新总结 |
+| [LATEST_WORK_SUMMARY.md](LATEST_WORK_SUMMARY.md) | 最新工作总结 |
+| [COMPLETION_REPORT.md](COMPLETION_REPORT.md) | 完成报告 |
+| [ANALYSIS_COMPLETE_SUMMARY.md](ANALYSIS_COMPLETE_SUMMARY.md) | 分析完成总结 |
+| [EXECUTIVE_SUMMARY.md](EXECUTIVE_SUMMARY.md) | 执行总结 |
+| [README_ANALYSIS_COMPLETE.md](README_ANALYSIS_COMPLETE.md) | README |
+
+---
+
+### 🔧 **其他文档** (3 个文档)
+
+| 文档 | 说明 |
+|------|------|
+| [README.md](README.md) | 项目 README |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | 行为准则 |
+| [FONTATIONS_MAKE_ANALYSIS.md](FONTATIONS_MAKE_ANALYSIS.md) | Fontations Make 分析 |
+| [UNTRACKED_DOCS_SUMMARY.md](UNTRACKED_DOCS_SUMMARY.md) | 未追踪文档总结 |
+| [SEARCH_RESULTS_SUMMARY.md](SEARCH_RESULTS_SUMMARY.md) | 搜索结果总结 |
+
+---
+
+## 🎯 快速导航
+
+### 按用途分类
+
+#### 🚀 **快速入门** (建议阅读顺序)
+1. [START_HERE_ANDROID_CHROMIUM_FONTS.md](START_HERE_ANDROID_CHROMIUM_FONTS.md) - 如果关注 Android
+2. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - 通用快速参考
+3. [CHROMIUM_FONT_TERMINOLOGY_GUIDE.md](CHROMIUM_FONT_TERMINOLOGY_GUIDE.md) - 理解术语
+4. [CHROMIUM_CSS_TO_RENDERING_COMPREHENSIVE_GUIDE.md](CHROMIUM_CSS_TO_RENDERING_COMPREHENSIVE_GUIDE.md) - 完整流程
+
+#### 📚 **深度学习** (全面理解)
+1. [FONT_DATA_STRUCTURES_COMPLETE_INHERITANCE.md](FONT_DATA_STRUCTURES_COMPLETE_INHERITANCE.md) - 数据结构
+2. [FONT_RENDERING_COMPREHENSIVE_ANALYSIS.md](FONT_RENDERING_COMPREHENSIVE_ANALYSIS.md) - 渲染管道
+3. [CHARACTER_FALLBACK_MECHANISM.md](CHARACTER_FALLBACK_MECHANISM.md) - 字符替补
+4. [CHARACTER_FALLBACK_CALL_STACK.md](CHARACTER_FALLBACK_CALL_STACK.md) - 完整调用栈
+
+#### 🔍 **查阅参考**
+- [FONT_CALL_CHAIN_QUICK_REFERENCE.md](FONT_CALL_CHAIN_QUICK_REFERENCE.md) - 调用链查询
+- [CHROMIUM_FONT_SELECTION_QUICK_REFERENCE.md](CHROMIUM_FONT_SELECTION_QUICK_REFERENCE.md) - 字体选择查询
+- [RENDERING_NG_QUICK_REFERENCE.md](RENDERING_NG_QUICK_REFERENCE.md) - 渲染查询
+
+#### 🔧 **平台特定**
+- **Android**: 16 个 Android 开头的文档
+- **Chrome**: 8 个 Chrome 开头的文档
+- **通用 Chromium**: 14 个 Chromium 开头的文档
+
+#### ⚙️ **专题深入**
+- **CSS 字体选择**: 4 个文档
+- **Web 字体**: 2 个文档
+- **字体引擎**: 3 个文档
+- **No-CSS 流程**: 3 个文档
+- **RenderingNG**: 5 个文档
+
+---
+
+## 📊 文档统计
+
+```
+总计: 84 个文档
+
+按类别:
+├─ Android Chromium        17 个 (20%)
+├─ Chrome 浏览器           8 个  (10%)
+├─ Chromium 整体           14 个 (17%)
+├─ 字体渲染管道            10 个 (12%)
+├─ 字体数据结构            7 个  (8%)
+├─ 索引和总结              9 个  (11%)
+├─ 调用链和参考            5 个  (6%)
+├─ Web 字体系统            2 个  (2%)
+├─ 字体引擎               3 个  (4%)
+├─ 字符替补               2 个  (2%)
+├─ CSS 字体选择            4 个  (5%)
+├─ No-CSS 流程             3 个  (4%)
+└─ 其他                    5 个  (6%)
+```
+
+---
+
+## 💡 使用建议
+
+### 场景 1: "我是完全新手，想快速了解"
+→ 按照"快速入门"顺序阅读 4 个文档
+
+### 场景 2: "我需要深度理解整个系统"
+→ 按照"深度学习"顺序阅读 4 个核心文档
+
+### 场景 3: "我需要查找特定的信息"
+→ 使用对应类别的快速参考文档
+
+### 场景 4: "我在开发 Android 应用"
+→ 重点关注 **Android Chromium** 类别（17 个文档）
+
+### 场景 5: "我在改进 Chrome 浏览器字体"
+→ 重点关注 **Chrome 浏览器字体** 和 **Chromium 整体** 类别
+
+### 场景 6: "我在处理字体替补问题"
+→ 查看 **字符替补机制** 类别的 2 个文档
+
+---
+
+## 🔄 文档间的关系
+
+```
+CHROMIUM_CSS_TO_RENDERING_COMPREHENSIVE_GUIDE
+├─ CHARACTER_FALLBACK_CALL_STACK
+├─ FONT_RENDERING_COMPREHENSIVE_ANALYSIS
+├─ CHROMIUM_FONT_SELECTION_FLOW
+└─ FONT_DATA_STRUCTURES_COMPLETE_INHERITANCE
+
+START_HERE_ANDROID_CHROMIUM_FONTS
+├─ ANDROID_CHROMIUM_FONT_FEATURE_ANALYSIS_SUMMARY
+├─ ANDROID_FONT_LOADING_CALL_STACK
+└─ ANDROID_FONT_SELECTION_COMPLETE_FLOW
+
+FONT_MATCHING_RFC_TO_CODE_EVIDENCE
+├─ FONT_FAMILY_RESOLUTION_FLOW
+└─ FONTFACE_FONTDATA_RELATIONSHIP
+
+WEB_FONTS_DETAILED_ANALYSIS
+├─ WEB_FONT_DOWNLOAD_PROCESSING
+└─ FONTCACHE_VS_FONTFACECACHE_ANALYSIS
+```
+
+---
+
+**创建日期**: 2024-02-05  
+**总字数**: 约 200,000+ 字  
+**覆盖范围**: Chromium 字体系统的各个方面
